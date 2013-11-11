@@ -1,3 +1,9 @@
+(*Boris Kachscovsky - 9110017317*)
+(*Advanced Functional Programming*)
+(*Uppsala University*)
+(*November 11, 2013*)
+(*kachscovsky@gmail.com*)
+
 fun rally maxAc maxBr track =
 let
 
@@ -67,7 +73,7 @@ let
   fun rally' moves _ [] = moves
     | rally' moves speed track =
     let
-      val tiles = maxTiles speed (p track;track)
+      val tiles = maxTiles speed track
     in
       rally' (moves + 1) tiles (advance tiles track)
     end
